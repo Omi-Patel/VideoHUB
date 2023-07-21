@@ -1,0 +1,31 @@
+.anime {
+    /* border: 2px solid red; */
+    animation: updown 0.8s linear infinite alternate;
+}
+
+.img1 {
+    mask-image: linear-gradient(rgb(70, 98, 255), transparent);
+}
+
+.signup {
+    mask-image: linear-gradient(rgb(0, 0, 0), transparent);
+}
+
+@media screen and (max-width:500px) {
+    .slider{
+        height: 60vh;
+    }
+
+    .txt{
+        font-size: 16px;
+        color: red;
+        
+    }
+}
+
+@keyframes updown {
+    to {
+        transform: translateY(-10px);
+        /* background-blend-mode: overlay; */
+    }
+}
